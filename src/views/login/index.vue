@@ -74,8 +74,8 @@
 </template>
 
 <script>
-import { validUsername } from '@/utils/validate'
-import SocialSign from './components/SocialSignin'
+import { validUsername } from '@/utils/validate'// 校验有效的用户名
+import SocialSign from './components/SocialSignin'// 其他登录方式
 
 export default {
   name: 'Login',
@@ -97,7 +97,7 @@ export default {
     }
     return {
       loginForm: {
-        username: '@强',
+        username: 'admin',
         password: '111111'
       },
       loginRules: {

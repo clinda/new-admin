@@ -84,6 +84,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/test-part',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/test-part/index'),
+        name: '练习传值',
+        meta: { title: '练习传值', icon: 'star', affix: true }
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     children: [
